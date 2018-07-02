@@ -12,6 +12,9 @@
 		case 'logout':
 			require 'security/logout.php';
 			break;
+		case 'create-activity':
+			require 'activity/create.php';
+			break;
 		default:
 			require 'default/home.php';
 			break;

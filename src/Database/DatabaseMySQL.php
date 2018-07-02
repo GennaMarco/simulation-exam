@@ -40,4 +40,9 @@ abstract class DatabaseMySQL
       }
       return $objects;
     }
+
+    public function convertStringToDate($string){
+      $date = DateTime::createFromFormat('d/m/Y', $string);
+      return $date->format('Y-m-d');
+    }
 }

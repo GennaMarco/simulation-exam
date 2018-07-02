@@ -8,12 +8,20 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="?page=home">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Activities</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Activities <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="?page=create-activity">Create</a></li>
+          </ul>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <?php if(isset($_SESSION['user'])): ?>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['user']->getEmail(); ?> <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['user']->getEmail(); ?> <span class="caret"></span>
+          </a>
           <ul class="dropdown-menu">
             <li><a href="?page=logout">Logout</a></li>
           </ul>
