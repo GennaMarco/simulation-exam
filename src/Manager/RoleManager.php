@@ -1,8 +1,5 @@
-<?php 
+<?php
 
-/**
- * 
- */
 class RoleManager extends DatabaseMySQL
 {
 	public function getRoleByCode($code)

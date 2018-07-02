@@ -2,7 +2,7 @@
 
 class RouteAccess 
 {
-	private $location = 'Location: ../default/homepage.php';
+	private $location = 'Location: ../View/base.php';
 
 	public function allowRouteAccessToRoles($role_codes){
 		$roleManager = new RoleManager();

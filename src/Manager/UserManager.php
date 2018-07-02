@@ -1,8 +1,5 @@
 <?php 
 
-/**
- * 
- */
 class UserManager extends DatabaseMySQL
 {
 	public function insertUser($user)

@@ -7,7 +7,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="../default/homepage.php">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="?page=home">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Activities</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -15,12 +15,12 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['user']->getEmail(); ?> <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="../security/logout.php">Logout</a></li>
+            <li><a href="?page=logout">Logout</a></li>
           </ul>
         </li>
     	<?php else: ?>
-    		<li><a href="../security/register.php">Register</a></li>
-        <li><a href="../security/login.php">Login</a></li>
+    		<li><a href="?page=register">Register</a></li>
+        <li><a href="?page=login">Login</a></li>
     	<?php endif; ?>
       </ul>
     </div><!-- /.navbar-collapse -->
